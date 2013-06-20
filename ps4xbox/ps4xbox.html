@@ -1,0 +1,12 @@
+<head>
+</head>
+
+<body>
+		{{> voting}}
+</body>
+
+<template name="voting">
+	{{#each votes}}
+    <div class="vote {{name}}" data-id="{{name}}">{{name}} {{score}}</div>
+  {{/each}}
+</template>
